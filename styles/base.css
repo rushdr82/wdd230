@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #DAD7CD;
+    --secondary-color: #A3B18A;
+    --accent1-color: #588157;
+    --accent2-color: #3A5A40;
+    --heading-font: "Open Sans";
+    --paragraph-font: "Open Sans", Lato, sans-serif;
+    --headline-color-on-white: black;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: black;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #588157;
+    --nav-link-color: black;
+    --nav-background-color: #A3B18A;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #DAD7CD;
+}
+
+
+
+.header {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-white);
+    height: 100px;
+}
+
+.header h1 {
+    padding: 28px;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.header img {
+    max-height: 70px;
+    max-width: 70px;
+    float: left;
+    padding-top: 12px;
+    padding-left: 12px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav.a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    color: var(--nav-link-color);
+}
+
+.nav.a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+body {
+    text-align: center;
+}
+
+.main {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+    padding-top: 5%;
+}
+
+#card {
+    padding-top: 2.5%;
+}
+
+#card li {
+    text-align: left;
+    list-style-type: none;
+}
+
+#card h3 {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    color: var(--paragraph-color-on-color);
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+.card h3 {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    color: var(--paragraph-color-on-color);
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+}
