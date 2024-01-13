@@ -1,0 +1,120 @@
+/* Google Font API Import */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: white;
+    --secondary-color: #69797E;
+    --accent1-color: black;
+    --accent2-color: #008752;
+
+    /* Use Open Sans Font */
+    font-family: 'Open Sans', sans-serif;
+
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #323130;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #323130;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #69797E;
+    --nav-link-color: #323130;
+    --nav-background-color: white;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: #69797E;
+}
+
+body {}
+
+header {
+    background: var(--accent2-color);
+    color: var(--headline-color-on-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+    place-content: space-around center;
+    align-items: center;
+    padding: 2%;
+}
+
+nav {
+    background: var(--accent1-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: solid;
+    font-weight: bold;
+    font-size: larger;
+    padding: 20px;
+    color: var(--headline-color-on-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 600px;
+    column-width: 600px;
+    place-content: center;
+}
+
+#main-title {
+    text-align: center;
+    text-decoration: solid;
+    text-decoration-line: underline;
+    text-underline-offset: .5em;
+    text-underline-position: auto;
+    font-weight: bold;
+    font-size: larger;
+    padding: 20px;
+    color: var(--headline-color-on-white);
+}
+
+.card {
+    display: grid;
+    outline: auto;
+    margin: 5px;
+
+}
+
+h3 {
+    text-align: center;
+    background-color: var(--headline-color-on-white);
+    color: var(--paragraph-color-on-color);
+    padding: 2%;
+    margin: 0%;
+}
+
+ul {
+    list-style: none;
+}
+
+.infocard {
+    text-align: center;
+}
+
+footer {
+    background: var(--accent1-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--headline-color-on-color);
+    margin-top: 5%;
+}
+
+footer p {
+    text-decoration: solid;
+    font-weight: bold;
+    font-size: larger;
+    padding: 20px;
+    color: var(--headline-color-on-color);
+}
