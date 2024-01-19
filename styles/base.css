@@ -1,10 +1,5 @@
 /* Google Font API Import */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/fonts/OpenSans-Regular.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
     /* change the values below to your colors from your palette */
@@ -47,9 +42,8 @@ header {
 
 nav {
     background: var(--accent1-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    text-align: center;
 }
 
 nav a {
