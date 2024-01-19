@@ -28,8 +28,6 @@
     --nav-hover-background-color: #69797E;
 }
 
-body {}
-
 header {
     background: var(--accent2-color);
     color: var(--headline-color-on-color);
@@ -37,21 +35,31 @@ header {
     grid-template-columns: 150px auto;
     place-content: space-around center;
     align-items: center;
-    padding: 2%;
+    padding: 1rem;
 }
 
 nav {
     background: var(--accent1-color);
-    display: grid;
+    margin: 0 auto;
     text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
 }
 
 nav a {
+    display: block;
+    padding: 10px;
     text-decoration: solid;
     font-weight: bold;
     font-size: larger;
-    padding: 20px;
     color: var(--headline-color-on-color);
+}
+
+nav a:hover {
+    border: solid var(--nav-hover-background-color);
 }
 
 main {
@@ -73,27 +81,41 @@ main {
     color: var(--headline-color-on-white);
 }
 
-.card {
+.learningcard,
+.infocard {
     display: grid;
-    outline: auto;
     margin: 5px;
-
+    border: solid black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h3 {
+    display: inline-block;
+    font-size: 1.25em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.learningcard h3 {
+    color: var(--paragraph-color-on-white);
     text-align: center;
-    background-color: var(--headline-color-on-white);
-    color: var(--paragraph-color-on-color);
-    padding: 2%;
-    margin: 0%;
+}
+
+.infocard h3 {
+    color: var(--paragraph-color-on-white);
+    text-align: center;
+}
+
+.infocard p {
+    text-align: center;
 }
 
 ul {
     list-style: none;
-}
-
-.infocard {
-    text-align: center;
 }
 
 footer {

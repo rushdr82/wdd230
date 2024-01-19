@@ -1,0 +1,26 @@
+@media screen and (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ui li {
+        flex: 1 1 100%;
+    }
+
+    #main-title {
+        grid-column: 1 / 3;
+    }
+
+    .card {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .learningcard {
+        grid-column: 1 / 2;
+    }
+
+    .infocard {
+        grid-column: 2 / 3;
+    }
+}
