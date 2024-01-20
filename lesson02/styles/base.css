@@ -1,0 +1,105 @@
+/* Google Font API Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: white;
+    --secondary-color: lightblue;
+    --accent1-color: darkgray;
+    --accent2-color: royalblue;
+
+    /* Use Open Sans Font */
+    font-family: 'Open Sans', sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: black;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: black;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: lightgray;
+    --nav-link-color: gray;
+    --nav-background-color: white;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: gray;
+}
+
+header {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    max-width: 1920px;
+}
+
+main {
+    text-align: left;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    border: solid 5px var(--accent1-color);
+    margin-bottom: 2%;
+}
+
+.card h2 {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 60px;
+    background-color: var(--accent2-color);
+    color: var(--headline-color-on-color);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card img {
+    display: flex;
+    margin: auto;
+    image-rendering: auto;
+    max-width: 100%;
+    max-height: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-color);
+    padding: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    main {
+        text-align: left;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width:600px) {
+    main {
+        text-align: left;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+}
