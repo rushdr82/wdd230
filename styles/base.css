@@ -38,35 +38,64 @@ header {
     padding: 1rem;
 }
 
-nav {
+.navigation {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
     background: var(--accent1-color);
     margin: 0 auto;
-    text-align: center;
-    padding: 1rem;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    padding: 10px;
+.navigation a {
     text-decoration: solid;
     font-weight: bold;
     font-size: larger;
     color: var(--headline-color-on-color);
 }
 
-nav a:hover {
-    border: solid var(--nav-hover-background-color);
+.navigation a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation li {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.open {
+    display: block;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
 }
 
 main {
-    display: grid;
-    grid-template-columns: 600px;
-    column-width: 600px;
     place-content: center;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 #main-title {
@@ -82,16 +111,13 @@ main {
 }
 
 .learningcard,
-.infocard {
-    display: grid;
-    margin: 5px;
+.infocard,
+.map {
     border: solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 1%;
 }
 
 h3 {
-    display: inline-block;
     font-size: 1.25em;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -114,8 +140,8 @@ h3 {
     text-align: center;
 }
 
-ul {
-    list-style: none;
+iframe {
+    width: 100%;
 }
 
 footer {
