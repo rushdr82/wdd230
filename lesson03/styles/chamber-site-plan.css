@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Roboto&display=swap');
+
+:root
+/* CSS HEX */
+--mint-cream: #f7fff6ff;
+--celadon: #bcebcbff;
+--light-green: #87d68dff;
+--cambridge-blue: #93b48bff;
+--cool-gray: #8491a3ff;
+
+/* CSS HSL */
+--mint-cream: hsla(113, 100%, 98%, 1);
+--celadon: hsla(139, 54%, 83%, 1);
+--light-green: hsla(125, 49%, 68%, 1);
+--cambridge-blue: hsla(108, 21%, 63%, 1);
+--cool-gray: hsla(215, 14%, 58%, 1);
+
+/* SCSS HEX */
+$mint-cream: #f7fff6ff;
+$celadon: #bcebcbff;
+$light-green: #87d68dff;
+$cambridge-blue: #93b48bff;
+$cool-gray: #8491a3ff;
+
+/* SCSS HSL */
+$mint-cream: hsla(113, 100%, 98%, 1);
+$celadon: hsla(139, 54%, 83%, 1);
+$light-green: hsla(125, 49%, 68%, 1);
+$cambridge-blue: hsla(108, 21%, 63%, 1);
+$cool-gray: hsla(215, 14%, 58%, 1);
+
+/* SCSS RGB */
+$mint-cream: rgba(247, 255, 246, 1);
+$celadon: rgba(188, 235, 203, 1);
+$light-green: rgba(135, 214, 141, 1);
+$cambridge-blue: rgba(147, 180, 139, 1);
+$cool-gray: rgba(132, 145, 163, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-right: linear-gradient(90deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-bottom: linear-gradient(180deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-left: linear-gradient(270deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-top-right: linear-gradient(45deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-bottom-right: linear-gradient(135deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-top-left: linear-gradient(225deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-bottom-left: linear-gradient(315deg, #f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+$gradient-radial: radial-gradient(#f7fff6ff, #bcebcbff, #87d68dff, #93b48bff, #8491a3ff);
+
+/* Fonts */
+font-family: 'Roboto',
+sans-serif;
+/* Primary */
+font-family: 'Open Sans',
+sans-serif;
+/* Secondary */
+font-family: 'Playfair Display',
+serif;
+/* Accent */
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+    ;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    max-width: 90%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+main {
+    display: block;
+}
+
+section {
+    border-style: double;
+    margin-top: 25px;
+}
+
+section h2 {
+    text-align: center;
+    background-color: lightslategray;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+section h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+section p {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    max-width: 80%;
+    border-style: dotted;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1%;
+
+}
