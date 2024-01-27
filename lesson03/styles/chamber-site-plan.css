@@ -72,11 +72,12 @@ serif;
 
 body {
     max-width: 90%;
+    background-color: #f7fff6;
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-color: #93b48b;
+    color: black;
     text-align: center;
     padding: 2%;
 }
@@ -87,13 +88,14 @@ main {
 
 section {
     border-style: double;
+    border-color: #8491a3;
     margin-top: 25px;
 }
 
 section h2 {
     text-align: center;
-    background-color: lightslategray;
-    color: white;
+    background-color: #bcebcb;
+    color: black;
     padding: 10px;
     margin: 0;
 }
@@ -121,8 +123,8 @@ section img {
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: #93b48b;
+    color: black;
     text-align: center;
     padding: 1%;
 
