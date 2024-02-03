@@ -18,28 +18,61 @@
 </head>
 <body>
     <header>
-
+        <section id="header-msg">
+            <h1 class="home-title">Hayden Chamber of Commerce</h1>
+            <h4>Creating Opportunies.<br>Developing Leaders.</h4>
+            <div class='button-box'>
+                <a class='join' href="contactus.html">Join Now!</a>
+            </div>
+        </section>
     </header>
-    <nav>
-
-    </nav>
     <main>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+                <img id="hero-img" src="images/lakeside-ariel-mobile.jpg" alt="Hayden Area Ariel Photo">
             </div>
+            <section>
+                <button id="menu"></button>
+                    <nav class="navigation">
+                        <a href="#" id=title="Home">Home</a>
+                        <a href="#" title="About Us" class="active">About Us</a>
+                        <a href="#" title="Service">Services</a>
+                        <a href="#" title="History">Products</a>
+                        <a href="#" title="Contact">Contact Us</a>
+                    </nav>
+            </section>
             <section id="hero-msg">
-                <h1 class="home-title">Have An Adventure</h1>
-                <h4>Make Memories with Dry Oar </h4>
+                <h1 class="home-title">Hayden Chamber of Commerce</h1>
+                <h4>Creating Opportunies.<br>Developing Leaders.</h4>
                 <div class='button-box'>
-                    <a class='book' href="contactus.html">Book Now</a>
+                    <a class='join' href="contactus.html">Join Now!</a>
                 </div>
+            </section>
+        </div>
+        <div id="home-grid">
+            <section class="events-card">
+                <h2>Upcoming Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, voluptatibus in, fuga facere est saepe dolores nam provident architecto asperiores minima. Esse, atque tempore quis perspiciatis exercitationem ducimus tempora libero!</p>
+            </section>
+            <section class="weather-card">
+                <h2>Weather Information</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi labore saepe cum debitis, optio tenetur quis accusamus cumque animi maxime molestias, quidem accusantium atque cupiditate neque, incidunt modi sapiente delectus.</p>
+            </section>
+            <section class="business-card">
+                <h2>Business Spotlight</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda recusandae in, quidem culpa natus nisi dolor reprehenderit est neque earum corporis magni id numquam, fuga tempora quis illum eveniet iste?</p>
             </section>
         </div>
     </main>
     <footer>
-
+        <p>&copy;&Tab;<span id="year"></span></p>
+        <p>Dustin Rush</p>
+        <p>Last Modified @ <span id="lastModified"></span></p>
+        <p><img src="https://flagcdn.com/16x12/us.png" alt="USA Flag"></p>
+        <p id="disclaimer">Disclaimer: This is a ficticious website as part of a project for BYU-Idaho Class WDD230. This site is not associated in any way to the actual Hayden ID Chamber of Commerce</p>
     </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
     
 </body>
 </html>
