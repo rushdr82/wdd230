@@ -136,7 +136,6 @@ nav {
 }
 
 .home-title {
-    color: var(--headline-color-on-color);
     font-size: 2em;
     margin-top: 10px;
 }
