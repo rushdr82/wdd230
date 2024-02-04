@@ -27,7 +27,7 @@ header {
 }
 
 nav {
-    max-width: 700px;
+    max-width: 100%;
     margin: 1rem auto;
 }
 
@@ -76,15 +76,6 @@ nav {
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
-}
-
-.stuff {
-    margin: .5m;
-    border: 1px solid rgba(0, 0, 0, .1);
-    background-color: #bed;
-    max-width: 580px;
-    height: 100vh;
-
 }
 
 #hero-msg {
