@@ -26,6 +26,10 @@
             </div>
             <section>
                 <button id="menu" title="Main Menu"></button>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                  </label>
                     <nav class="navigation">
                         <a href="#" id="Home">Home</a>
                         <a href="#" title="About Us" class="active">About Us</a>
@@ -45,27 +49,47 @@
         <div id="home-grid">
             <section class="events-card">
                 <h2>Upcoming Events</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, voluptatibus in, fuga facere est saepe dolores nam provident architecto asperiores minima. Esse, atque tempore quis perspiciatis exercitationem ducimus tempora libero!</p>
+                <h3>Annual Member Meeting</h3>
+                <h4>March 15th @ 7 PM<br>Kootenai County Fairgrounds</h4>
+                <p>The annual membership meeting will include dinner, guest speakers and vendor booths with tools to help you grow your business!</p>
+                    <a href="annualmeeting.html">More Info...</a>
             </section>
             <section class="weather-card">
                 <h2>Weather Information</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi labore saepe cum debitis, optio tenetur quis accusamus cumque animi maxime molestias, quidem accusantium atque cupiditate neque, incidunt modi sapiente delectus.</p>
+                <div>
+                    <h3>Currently in Hayden<br>
+                    [Live Content]</h3>
+                    <h4>Humidity: <br>Wind Chill:</h4>
+                </div>
+                <div>
+                    <h3>Hourly Forecast<br>
+                    [Live Content]</h3>
+                </div>
             </section>
             <section class="business-card">
                 <h2>Business Spotlight</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda recusandae in, quidem culpa natus nisi dolor reprehenderit est neque earum corporis magni id numquam, fuga tempora quis illum eveniet iste?</p>
+                <h3>Hayden Chiropratic Group</h3>
+                <img src="https://chiro.org/chimages/logos/chirocad_300dpi.jpg" alt="Chiropratic symbol from chiro.org (open use agreement)">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel beatae, esse nemo eaque architecto quibusdam quis labore alias repellat facilis cupiditate eos unde dicta! Tempore, dolor. Aperiam iusto alias perferendis.</p>
             </section>
         </div>
     </main>
     <footer>
-        <p>&copy;&Tab;<span id="year"></span></p>
-        <p>Dustin Rush</p>
-        <p>Last Modified @ <span id="lastModified"></span></p>
-        <p><img src="https://flagcdn.com/16x12/us.png" alt="USA Flag"></p>
-        <p id="disclaimer">Disclaimer: This is a ficticious website as part of a project for BYU-Idaho Class WDD230. This site is not associated in any way to the actual Hayden ID Chamber of Commerce</p>
+        <div id="contactcard">
+            <p>Hayden Chamber of Commerce<br>42 Wallaby Way<br>Hayden, ID 83835<br>(208) 555-0123<br>info@cchayden.org</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;&Tab;<span id="year"></span></p>
+            <p>|</p>
+            <p>Dustin Rush</p>
+            <p>|</p>
+            <p>Last Modified @ <span id="lastModified"></span></p>
+            <P>|</P>
+            <p><img src="https://flagcdn.com/16x12/us.png" alt="USA Flag"></p>
+        </div>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>

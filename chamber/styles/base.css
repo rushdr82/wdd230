@@ -34,7 +34,8 @@ nav {
 #menu {
     font-size: 1.5rem;
     border: 0;
-    background: none;
+    border-radius: .25em;
+    background-color: lightgray;
     color: #000;
     position: fixed;
     top: 2%;
@@ -47,6 +48,71 @@ nav {
 
 #menu.open::before {
     content: "❎";
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: fixed;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    bottom: 2%;
+    right: 2%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 2px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: darkgray;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px darkgray;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .navigation {
@@ -70,6 +136,14 @@ nav {
     color: black;
     font-weight: 700;
     font-size: large;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: black;
+    /* Dark background color */
+    color: white;
+    /* Light text color */
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -158,6 +232,14 @@ nav {
     padding: 8px;
 }
 
+.events-card a,
+.weather-card a,
+.business-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
 .events-card p,
 .weather-card p,
 .business-card p {
@@ -165,7 +247,12 @@ nav {
     padding: 2%;
 }
 
+.business-card img {
+    width: 20%;
+}
+
 footer {
+    display: block;
     margin-top: 10%;
     padding: 2%;
     text-align: center;
@@ -173,9 +260,13 @@ footer {
     color: white;
 }
 
-#disclaimer {
-    padding: 20px;
-    text-align: center;
-    font-size: small;
-    font-style: oblique;
+#copyright {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+#copyright p {
+    padding-left: .5em;
+    padding-right: .5em;
 }
