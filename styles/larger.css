@@ -18,8 +18,9 @@
     }
 
     .herolabel {
-        top: 5%;
-        left: 2%;
+        top: 10%;
+        left: 8%;
+        font-size: 100%;
     }
 
     #main-title {

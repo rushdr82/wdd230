@@ -79,7 +79,7 @@ ul {
     border: 0;
     background: none;
     color: #000;
-    position: fixed;
+    position: absolute;
     top: 2%;
     right: 2%;
 }
@@ -108,6 +108,7 @@ main {
     font-size: larger;
     padding: 20px;
     color: var(--headline-color-on-white);
+    margin-bottom: 25px;
 }
 
 .hero {
@@ -121,46 +122,50 @@ main {
 
 .herolabel {
     position: absolute;
-    top: 3%;
-    left: 25%;
+    top: 5%;
+    left: 2%;
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 5%;
     text-wrap: nowrap;
     text-decoration: solid;
-    font-weight: bolder;
-    font-size: larger;
-    font-style: oblique;
+    font-weight: lighter;
+    font-size: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: radial-gradient(white, skyblue);
-    border: 5px solid darkblue;
+    border: 2px double darkblue;
     box-shadow: 0 0 1rem darkblue;
-    opacity: 70%;
+    opacity: 60%;
 }
 
 .learningcard,
 .infocard,
 .map {
     border: solid black;
-    margin: 1%;
+    border-radius: 3%;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0 0 1rem black;
+    margin: 2%;
 }
 
 h3 {
     font-size: 1.25em;
+    font-weight: bold;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
 }
 
 .learningcard h3 {
-    color: var(--paragraph-color-on-white);
+    color: black;
     text-align: center;
 }
 
 .infocard h3 {
-    color: var(--paragraph-color-on-white);
+    color: black;
     text-align: center;
 }
 
@@ -170,6 +175,7 @@ h3 {
 
 iframe {
     width: 100%;
+    border-radius: 2%;
 }
 
 footer {
