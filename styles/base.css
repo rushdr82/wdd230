@@ -28,6 +28,10 @@
     --nav-hover-background-color: #69797E;
 }
 
+body {
+    max-width: 1200px;
+}
+
 header {
     background: var(--accent2-color);
     color: var(--headline-color-on-color);
@@ -95,19 +99,47 @@ ul {
 main {
     place-content: center;
     margin: 0 auto;
-    max-width: 90%;
+    width: 100%;
 }
 
 #main-title {
     text-align: center;
     text-decoration: solid;
     text-decoration-line: underline;
-    text-underline-offset: .5em;
+    text-underline-offset: .1em;
     text-underline-position: auto;
     font-weight: bold;
     font-size: larger;
     padding: 20px;
     color: var(--headline-color-on-white);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5%;
+    text-wrap: nowrap;
+    text-decoration: solid;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: oblique;
+    background: radial-gradient(white, skyblue);
+    border: 5px solid darkblue;
+    box-shadow: 0 0 1rem darkblue;
+    opacity: 70%;
 }
 
 .learningcard,

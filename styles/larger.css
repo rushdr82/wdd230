@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 400px) {
     nav ul {
         display: flex;
         justify-content: center;
@@ -12,9 +12,14 @@
         display: block;
     }
 
-    main div {
+    .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .herolabel {
+        top: 5%;
+        left: 2%;
     }
 
     #main-title {
