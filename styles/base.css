@@ -28,10 +28,6 @@
     --nav-hover-background-color: #69797E;
 }
 
-body {
-    max-width: 1200px;
-}
-
 header {
     background: var(--accent2-color);
     color: var(--headline-color-on-color);
