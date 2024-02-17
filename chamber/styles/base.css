@@ -4,7 +4,8 @@ body {
     background-color: lightgray;
     color: black;
     font-family: 'Roboto', sans-serif;
-    max-width: 100%;
+    max-width: 1500px;
+    margin: auto;
 }
 
 header {
