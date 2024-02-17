@@ -1,9 +1,18 @@
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1000px) {
 
     #home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+    }
+
+    #hero-large {
+        display: block;
+    }
+
+    #hero-medium,
+    #hero-small {
+        display: none;
     }
 
     .events-card {

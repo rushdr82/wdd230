@@ -4,25 +4,39 @@ body {
     background-color: lightgray;
     color: black;
     font-family: 'Roboto', sans-serif;
+    max-width: 100%;
 }
 
 header {
     display: none;
 }
 
-#hero {
+.hero {
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
+    margin: auto;
 }
 
-#hero-box {
+.hero-box {
     z-index: -1;
 }
 
-#hero-img {
-    width: 100%;
-    opacity: 50%;
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    left: 2%;
+    top: 0%;
+    font-style: italic;
+}
+
+#hero-medium,
+#hero-large {
+    display: none;
 }
 
 nav {
@@ -35,10 +49,8 @@ nav {
     font-size: 1.5rem;
     border: 0;
     border-radius: .25em;
-    background-color: lightgray;
     color: #000;
-    position: fixed;
-    top: 2%;
+    position: absolute;
     right: 2%;
 }
 
@@ -52,12 +64,12 @@ nav {
 
 /* The switch - the box around the slider */
 .switch {
-    position: fixed;
+    position: absolute;
     display: inline-block;
     width: 40px;
     height: 20px;
-    bottom: 2%;
     right: 2%;
+    top: 2%
 }
 
 /* Hide default HTML checkbox */
@@ -218,7 +230,7 @@ input:checked+.slider:before {
     border-style: double;
     margin-right: 5%;
     margin-left: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     text-align: center;
     background-color: gray;
 }
@@ -245,6 +257,30 @@ input:checked+.slider:before {
 .business-card p {
     text-align: left;
     padding: 2%;
+}
+
+.weather-card p {
+    text-align: center;
+}
+
+.inner-div {
+    margin-bottom: 15px;
+}
+
+.weatherbox {
+    display: flex;
+    justify-content: center;
+    max-height: 40px;
+}
+
+#thumbnail {
+    width: 60px;
+    height: 60px;
+    padding-right: 2%;
+}
+
+#temperature {
+    font-size: x-large;
 }
 
 .business-card img {

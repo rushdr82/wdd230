@@ -20,57 +20,87 @@
     <header>
     </header>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/lakeside-ariel-mobile.jpg" alt="Hayden Area Ariel Photo">
-            </div>
-            <section>
-                <button id="menu" title="Main Menu"></button>
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider round"></span>
-                  </label>
-                    <nav class="navigation">
-                        <a href="#" id="Home">Home</a>
-                        <a href="#" title="About Us" class="active">About Us</a>
-                        <a href="#" title="Service">Services</a>
-                        <a href="#" title="History">Products</a>
-                        <a href="#" title="Contact">Contact Us</a>
-                    </nav>
-            </section>
-            <section id="hero-msg">
-                <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
-                <h4>Creating Opportunies.<br>Developing Leaders.</h4>
-                <div class='button-box'>
-                    <a class='join' href="contactus.html">Join Now!</a>
+        <div class="hero">
+            <div class="hero-box">
+                <div>
+                    <picture class="hero-img">
+                      <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
+                      <source srcset="images/wdd230-medium.webp" media="(max-width: 1000px)">
+                      <img src="images/wdd230-large.webp" alt="Week06 Hero Image">
+                      <!--<img id="hero-img" src="images/lakeside-ariel-mobile.jpg" alt="Hayden Area Ariel Photo">-->
+                    </picture>
+                    <div class="herolabel">
+                        <p id="hero-small">Small</p>
+                    </div>
+                    <div class="herolabel">
+                        <p id="hero-medium">Medium</p>
+                    </div>
+                    <div class="herolabel">
+                        <p id="hero-large">Large</p>
+                    </div>
+                    <button id="menu" title="Main Menu"></button>
+                    <section>
+                        <nav class="navigation">
+                            <a href="#" id="Home">Home</a>
+                            <a href="#" title="About Us" class="active">About Us</a>
+                            <a href="#" title="Service">Services</a>
+                            <a href="#" title="History">Products</a>
+                            <a href="#" title="Contact">Contact Us</a>
+                        </nav>
+                    </section>
+                    <section id="hero-msg">
+                        <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
+                        <h4>Creating Opportunities.<br>Developing Leaders.</h4>
+                        <div class='button-box'>
+                            <a class='join' href="contactus.html">Join Now!</a>
+                        </div>
+                    </section>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle" aria-label="Dark Mode Toggle Checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
-            </section>
+            </div>
+
+
         </div>
         <div id="home-grid">
             <section class="events-card">
                 <h2>Upcoming Events</h2>
+                <div class="inner-div">
                 <h3>Annual Member Meeting</h3>
                 <h4>March 15th @ 7 PM<br>Kootenai County Fairgrounds</h4>
                 <p>The annual membership meeting will include dinner, guest speakers and vendor booths with tools to help you grow your business!</p>
                     <a href="annualmeeting.html">More Info...</a>
+                </div>
             </section>
             <section class="weather-card">
                 <h2>Weather Information</h2>
-                <div>
-                    <h3>Currently in Hayden<br>
-                    [Live Content]</h3>
-                    <h4>Humidity: <br>Wind Chill:</h4>
-                </div>
-                <div>
-                    <h3>Hourly Forecast<br>
-                    [Live Content]</h3>
+                <div class="inner-div">
+                    <h3>Currently in Hayden, ID</h3>
+                    <div class="weatherbox">
+                        <img id="thumbnail" src="" alt="" width="50">
+                        <p id="shortForecast"></p>
+                    </div>
+                    <div class="weatherbox">
+                        <p id="temperature"></p>
+                    </div>
+                    <div class="weatherbox">    
+                        <p id="windDirection"></p>
+                        <p id="windSpeed"></p>
+                    </div>
+                    <div class="weatherbox">
+                        <p id="result"></p>
+                    </div>
                 </div>
             </section>
             <section class="business-card">
                 <h2>Business Spotlight</h2>
+            <div class="inner-div">
                 <h3>Hayden Chiropratic Group</h3>
                 <img src="https://chiro.org/chimages/logos/chirocad_300dpi.jpg" alt="Chiropratic symbol from chiro.org (open use agreement)">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel beatae, esse nemo eaque architecto quibusdam quis labore alias repellat facilis cupiditate eos unde dicta! Tempore, dolor. Aperiam iusto alias perferendis.</p>
+            </div>
             </section>
         </div>
     </main>
@@ -91,5 +121,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
