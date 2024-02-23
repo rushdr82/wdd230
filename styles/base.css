@@ -173,6 +173,14 @@ h3 {
     text-align: center;
 }
 
+.page-visits {
+    font-weight: bold;
+}
+
+.visits {
+    font-weight: bolder;
+}
+
 iframe {
     width: 100%;
     border-radius: 2%;
