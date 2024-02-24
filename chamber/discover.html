@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce website for Hayden, ID as part of a class project for WDD230">
+    <meta name="author" content="Dustin Rush">
+    <meta property="og:title" content="Dustin Rush - WDD 230 - Chamber of Commerce Site Project">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rushdr82.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://images1.loopnet.com/i2/hkshLKEVUYDaZq4xtzjqH7YlSBUjx8l2GS1sABY1mIU/110/8110-N-Government-Way-Hayden-ID-Building-Photo-1-Large.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Hayden Idaho Chamber of Commerce Project</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
+        </section>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" aria-label="Dark Mode Toggle Checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu" title="Main Menu"></button>
+    </header>
+    <section>
+        <nav class="navigation">
+            <a href="#" id="Home">Home</a>
+            <a href="#" title="About Us" class="active">About Us</a>
+            <a href="#" title="Service">Services</a>
+            <a href="#" title="History">Products</a>
+            <a href="#" title="Contact">Contact Us</a>
+        </nav>
+    </section>
+    <main>
+        <div class="discover-grid">
+            <section class="welcome-card">
+                <h2>Welcome!</h2>
+                <p id="visit-message"></p>
+            </section>
+            <section class="demo-card">
+                <h2>About Hayden, ID</h2>
+                <div class="inner-div">
+                    <h3>Statistics</h3>
+                    <p>Population:&Tab;15,345</p>
+                    <p>Schools:&Tab;7</p>
+                    <p>Parks:&Tab;6</p>
+                    <p>Median Income:&Tab;$31,116</p>
+                </div>
+            </section>
+            <section class="events-card2">
+                <h2>Upcoming Events</h2>
+                <div class="inner-div">
+                <h3>Annual Member Meeting</h3>
+                <h4>March 15th @ 7 PM<br>Kootenai County Fairgrounds</h4>
+                <p>The annual membership meeting will include dinner, guest speakers and vendor booths with tools to help you grow your business!</p>
+                    <a href="annualmeeting.html">More Info...</a>
+                </div>
+            </section>
+            <section class="calendar-card">
+                <h2>Calendar</h2>
+                <div class="inner-div">
+                    <div class="month">
+                        <ul>
+                          <li class="prev">&#10094;</li>
+                          <li class="next">&#10095;</li>
+                          <li>February<br><span>2024</span></li>
+                        </ul>
+                      </div>
+                      <ul class="weekdays">
+                        <li>Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                      </ul>
+                      <ul class="days">
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                      </ul>  
+                </div>
+            </section>
+            <picture class="dis-pic">
+                <source srcset="images/atlas-sm.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/atlas-med.webp" media="(max-width: 750px)" loading="lazy">
+                <img src="images/atlas-lrg.webp" alt="Atlas Elementary School" loading="lazy">
+                <p class="caption">Atlas Elementary School</p>
+            </picture>
+            <picture class="dis-pic">
+                <source srcset="images/broadmoore-sm.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/broadmoore-med.webp" media="(max-width: 750px)" loading="lazy">
+                <img src="images/broadmoore-lrg.webp" alt="Broadmoore Park" loading="lazy">
+                <p class="caption">Broadmoore Park</p>
+            </picture>
+            <picture class="dis-pic">
+                <source srcset="images/shopping-sm.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/shopping-med.webp" media="(max-width: 750px)" loading="lazy">
+                <img src="images/shopping-lrg.webp" alt="Hayden Shopping Center" loading="lazy">
+                <p class="caption">Hayden Shopping Center</p>
+            </picture>
+            <picture class="dis-pic">
+                <source srcset="images/stoddard-sm.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/stoddard-med.webp" media="(max-width: 750px)" loading="lazy">
+                <img src="images/stoddard-lrg.webp" alt="Stoddard Park" loading="lazy">
+                <p class="caption">Stoddard Park</p>
+            </picture>
+            <picture class="dis-pic">
+                <source srcset="images/meadows-sm.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/meadows-med.webp" media="(max-width: 750px)" loading="lazy">
+                <img src="images/meadows-lrg.webp" alt="Meadows Elementary School" loading="lazy">
+                <p class="caption">Meadows Elementary School</p>
+            </picture>
+            <picture class="dis-pic">
+                <source srcset="images/honeysuckle-sm.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/honeysuckle-med.webp" media="(max-width: 750px)" loading="lazy">
+                <img src="images/honeysuckle-lrg.webp" alt="Honeysuckle Beach Park" loading="lazy">
+                <p class="caption">Honeysuckle Beach Park</p>
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <div id="contactcard">
+            <p>Hayden Chamber of Commerce<br>42 Wallaby Way<br>Hayden, ID 83835<br>(208) 555-0123<br>info@cchayden.org</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;&Tab;<span id="year"></span></p>
+            <p>|</p>
+            <p>Dustin Rush</p>
+            <p>|</p>
+            <p>Last Modified @ <span id="lastModified"></span></p>
+            <P>|</P>
+            <p><img src="images/usa-flag-small.webp" alt="USA Flag" width="20"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visit-message.js"></script>
+</body>
+</html>

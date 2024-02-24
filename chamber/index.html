@@ -18,53 +18,51 @@
 </head>
 <body>
     <header>
+        <section>
+            <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
+        </section>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" aria-label="Dark Mode Toggle Checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu" title="Main Menu"></button>
     </header>
-    <main>
+    <section>
+        <nav class="navigation">
+            <a href="#" id="Home">Home</a>
+            <a href="#" title="About Us" class="active">About Us</a>
+            <a href="#" title="Service">Services</a>
+            <a href="#" title="History">Products</a>
+            <a href="#" title="Contact">Contact Us</a>
+        </nav>
+    </section>
+    <section>
         <div class="hero">
-            <div class="hero-box">
-                <div>
-                    <picture class="hero-img">
-                      <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
-                      <source srcset="images/wdd230-medium.webp" media="(max-width: 1000px)">
-                      <img src="images/wdd230-large.webp" alt="Week06 Hero Image">
+                <picture class="hero-img">
+                    <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/wdd230-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/wdd230-large.webp" alt="Week06 Hero Image">
                       <!--<img id="hero-img" src="images/lakeside-ariel-mobile.jpg" alt="Hayden Area Ariel Photo">-->
-                    </picture>
-                    <div class="herolabel">
-                        <p id="hero-small">Small</p>
-                    </div>
-                    <div class="herolabel">
-                        <p id="hero-medium">Medium</p>
-                    </div>
-                    <div class="herolabel">
-                        <p id="hero-large">Large</p>
-                    </div>
-                    <button id="menu" title="Main Menu"></button>
-                    <section>
-                        <nav class="navigation">
-                            <a href="#" id="Home">Home</a>
-                            <a href="#" title="About Us" class="active">About Us</a>
-                            <a href="#" title="Service">Services</a>
-                            <a href="#" title="History">Products</a>
-                            <a href="#" title="Contact">Contact Us</a>
-                        </nav>
-                    </section>
-                    <section id="hero-msg">
-                        <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
-                        <h4>Creating Opportunities.<br>Developing Leaders.</h4>
-                        <div class='button-box'>
-                            <a class='join' href="contactus.html">Join Now!</a>
-                        </div>
-                    </section>
-                    <label class="switch">
-                        <input type="checkbox" id="darkModeToggle" aria-label="Dark Mode Toggle Checkbox">
-                        <span class="slider round"></span>
-                    </label>
+                </picture>
+                <div class="herolabel">
+                    <p id="hero-small">Small</p>
                 </div>
-            </div>
-
-
+                <div class="herolabel">
+                    <p id="hero-medium">Medium</p>
+                </div>
+                <div class="herolabel">
+                    <p id="hero-large">Large</p>
+                </div>
+                <div class="hero-msg">
+                    <h2>Creating Opportunities.<br>Developing Leaders.</h2>
+                </div>    
+                <div class='button-box'>
+                    <a class='join' href="contactus.html">Join Now!</a>
+                </div>
         </div>
-        <div id="home-grid">
+    </section>
+    <main>
+        <div class="home-grid">
             <section class="events-card">
                 <h2>Upcoming Events</h2>
                 <div class="inner-div">
@@ -114,7 +112,7 @@
             <p>Dustin Rush</p>
             <p>|</p>
             <p>Last Modified @ <span id="lastModified"></span></p>
-            <P>|</P>
+            <p>|</p>
             <p><img src="images/usa-flag-small.webp" alt="USA Flag" width="20"></p>
         </div>
     </footer>
