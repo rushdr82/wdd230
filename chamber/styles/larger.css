@@ -1,5 +1,9 @@
 @media screen and (min-width:1000px) {
 
+    body {
+        max-width: 1500px;
+    }
+
     .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -40,6 +44,7 @@
     .events-card {
         grid-column: 1/2;
         grid-row: 1/2;
+        margin-top: 25px;
     }
 
     .weather-card {

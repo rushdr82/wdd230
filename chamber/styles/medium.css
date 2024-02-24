@@ -73,18 +73,31 @@
     .events-card {
         grid-column: 1/3;
         grid-row: 1/2;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
     }
 
     .weather-card {
         grid-column: 1/2;
         grid-row: 2/3;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
     }
 
     .business-card {
         grid-column: 2/3;
         grid-row: 2/3;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: auto;
     }
 
     .welcome-card {
