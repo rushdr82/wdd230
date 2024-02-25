@@ -255,7 +255,6 @@ input:checked+.slider:before {
     font-size: smaller;
     font-style: italic;
     text-align: center;
-
 }
 
 #visit-message {
@@ -276,9 +275,9 @@ input:checked+.slider:before {
     margin-bottom: 5%;
     text-align: center;
     background-color: gray;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 200px;
-    width: 400px;
+    width: 300px;
 }
 
 .events-card h2,
