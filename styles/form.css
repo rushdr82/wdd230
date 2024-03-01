@@ -68,7 +68,7 @@ input[name="email"]:invalid {
 }
 
 #formmessage {
-    visibility: none;
+    visibility: unset;
     margin: 7px;
     padding: 0.5rem;
     color: red;
