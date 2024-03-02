@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce website for Hayden, ID as part of a class project for WDD230">
+    <meta name="author" content="Dustin Rush">
+    <meta property="og:title" content="Dustin Rush - WDD 230 - Chamber of Commerce Site Project">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rushdr82.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://images1.loopnet.com/i2/hkshLKEVUYDaZq4xtzjqH7YlSBUjx8l2GS1sABY1mIU/110/8110-N-Government-Way-Hayden-ID-Building-Photo-1-Large.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Hayden Idaho Chamber of Commerce Project</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
+        </section>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" aria-label="Dark Mode Toggle Checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu" title="Main Menu"></button>
+    </header>
+    <section>
+        <nav class="navigation">
+            <a href="#" id="Home">Home</a>
+            <a href="discover.html" title="About Us" class="active">About Us</a>
+            <a href="#" title="Service">Services</a>
+            <a href="#" title="History">Products</a>
+            <a href="#" title="Contact">Contact Us</a>
+        </nav>
+    </section>
+    <main class="application">
+        <h1>Chamber of Commerce Member Application</h1>
+    <form class="mem-app" method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Applicant Information</legend>
+                <label for="fname">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label for="busname">Business Name* <input type="text" id="busname" name="busname" required></label>
+                <label for="title">Title/Position* <input type="text" id="title" name="title" pattern="[a-zA-Z\- ]{7,}" required></label>
+                <label for="email">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label for="phone">Mobile Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Membership Level</legend>
+            <div>Choose One:</div>
+            <label for="membership"><input type="radio" name="membership" value="non-profit"> Non-profit (no fee - Bronze)</label>
+            <label for="membership"><input type="radio" name="membership" value="bronze"> Bronze</label>
+            <label for="membership"><input type="radio" name="membership" value="advanced"> Silver</label>
+            <label for="membership"><input type="radio" name="membership" value="advanced"> Gold</label>
+        </fieldset>
+        <fieldset>
+            <legend>Business Description</legend>
+            <label for="description">Please describe your business here: <textarea id="description" name="description" rows="10" cols="30"></textarea></label>
+        </fieldset>
+        <label for="timestamp"><input type="hidden" id="timestamp" name="timestamp"></label>
+        <label for="button"><input type="submit" id="btnapply" value="Apply for Membership"></label>
+    </form>
+    <table class="comparison">
+        <caption>Membership Level Feature Comparison</caption>
+        <thead>
+         <tr>
+             <th colspan="4" scope="colgroup">Chamber Membership Levels</th>
+         </tr>
+         <tr>
+             <th scope="col">Features</th>
+             <th class="bronze" scope="col">Bronze</th>
+             <th class="silver" scope="col">Silver</th>
+             <th class="gold" scope="col">Gold</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+             <td>1-Year Subscription</td>
+             <td>✔️</td>
+             <td>✔️</td>
+             <td>✔️</td>
+             
+         </tr>
+         <tr>
+             <td>Membership Plaque</td>
+             <td>✔️</td>
+             <td>✔️</td>
+             <td>✔️</td>
+             
+         </tr>
+         <tr>
+             <td>Online Directory Listing</td>
+             <td>✔️</td>
+             <td>✔️</td>
+             <td>✔️</td>
+             
+         </tr>
+         <tr>
+            <td>Community Guide Listing</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>Chamber Events Admission</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>Weekly Newsletter</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>Free Notary Public</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>Advertising Discounts</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>E-blast to Membership</td>
+            <td>2/year</td>
+            <td>4/year</td>
+            <td>12/year</td>
+             
+        </tr>
+        <tr>
+            <td>Enhanced Online Listing</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+             
+        </tr>
+        <tr>
+            <td>Advertise on Chamber Website</td>
+            <td>❌</td>
+            <td>✔️</td>
+            <td>✔️</td>
+             
+        </tr>
+        <tr>
+            <td>Business Logo on Newsletter</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+             
+        </tr>
+        <tr>
+            <td>Annual Spotlight on Chamber WebSite</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>Chamber Website Recognition</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+            
+        </tr>
+        <tr>
+            <td>Early bird Sponsorship Opportiunities</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔️</td>
+            
+        </tr>
+        </tbody>
+     </table>
+    </main>
+    <footer>
+        <div id="contactcard">
+            <p>Hayden Chamber of Commerce<br>42 Wallaby Way<br>Hayden, ID 83835<br>(208) 555-0123<br>info@cchayden.org</p>
+        </div>
+        <div id="copyright">
+            <p>&copy;&Tab;<span id="year"></span></p>
+            <p>|</p>
+            <p>Dustin Rush</p>
+            <p>|</p>
+            <p>Last Modified @ <span id="lastModified"></span></p>
+            <p>|</p>
+            <p><img src="images/usa-flag-small.webp" alt="USA Flag" width="20"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+</html>

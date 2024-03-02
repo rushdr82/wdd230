@@ -241,6 +241,148 @@ input:checked+.slider:before {
     background-color: black;
 }
 
+.application {
+    display: flex;
+    flex-direction: column;
+}
+
+.application h1 {
+    margin: 20px;
+}
+
+.thankyou {
+    text-align: center;
+}
+
+.mem-app {
+    padding: .5rem 2%;
+}
+
+.mem-app fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    min-width: 310px;
+}
+
+.mem-app legend {
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+.mem-app label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.mem-app div {
+    padding-top: 1rem;
+    color: darkblue;
+    font-size: .9rem;
+}
+
+.mem-app input[type="text"],
+.mem-app input[type="tel"],
+.mem-app input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px black;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 275px;
+    appearance: none;
+}
+
+.mem-app textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px black;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 275px;
+    appearance: none;
+}
+
+.mem-app input[type="radio"] {
+    margin-right: 6px;
+}
+
+.mem-app input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(green, darkgreen);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.mem-app input:required {
+    border-left: solid 8px red;
+}
+
+.mem-app input:required:valid {
+    border-left: solid 8px green;
+}
+
+.comparison {
+    margin: 10px auto;
+    border-radius: 6px;
+    border-collapse: collapse;
+}
+
+.comparison caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+tr:first-child th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: large;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid hsla(0, 0%, 33%, .3);
+}
+
+th {
+    background-color: darkgray;
+    color: black;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: hsl(0, 0%, 93%, 1);
+}
+
+.bronze {
+    background-color: #CD7F32;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.gold {
+    background-color: gold;
+}
+
 .dis-pic img {
     width: 400px;
     min-width: 400px;
