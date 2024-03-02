@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce website for Hayden, ID as part of a class project for WDD230">
+    <meta name="description" content="Application form to join the Hayden Chamber of Commerce">
     <meta name="author" content="Dustin Rush">
-    <meta property="og:title" content="Dustin Rush - WDD 230 - Chamber of Commerce Site Project">
+    <meta property="og:title" content="Join the Hayden Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rushdr82.github.io/wdd230/chamber">
     <meta property="og:image" content="https://images1.loopnet.com/i2/hkshLKEVUYDaZq4xtzjqH7YlSBUjx8l2GS1sABY1mIU/110/8110-N-Government-Way-Hayden-ID-Building-Photo-1-Large.jpg">
@@ -45,23 +45,23 @@
                 <label for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
                 <label for="busname">Business Name* <input type="text" id="busname" name="busname" required></label>
                 <label for="title">Title/Position* <input type="text" id="title" name="title" pattern="[a-zA-Z\- ]{7,}" required></label>
-                <label for="email">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label for="phone">Mobile Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Mobile Phone* <input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
         </fieldset>
         <fieldset>
             <legend>Membership Level</legend>
             <div>Choose One:</div>
-            <label for="membership"><input type="radio" name="membership" value="non-profit"> Non-profit (no fee - Bronze)</label>
-            <label for="membership"><input type="radio" name="membership" value="bronze"> Bronze</label>
-            <label for="membership"><input type="radio" name="membership" value="advanced"> Silver</label>
-            <label for="membership"><input type="radio" name="membership" value="advanced"> Gold</label>
+            <label><input type="radio" name="membership" value="non-profit"> Non-profit (no fee - Bronze)</label>
+            <label><input type="radio" name="membership" value="bronze"> Bronze</label>
+            <label><input type="radio" name="membership" value="advanced"> Silver</label>
+            <label><input type="radio" name="membership" value="advanced"> Gold</label>
         </fieldset>
         <fieldset>
             <legend>Business Description</legend>
             <label for="description">Please describe your business here: <textarea id="description" name="description" rows="10" cols="30"></textarea></label>
         </fieldset>
-        <label for="timestamp"><input type="hidden" id="timestamp" name="timestamp"></label>
-        <label for="button"><input type="submit" id="btnapply" value="Apply for Membership"></label>
+        <label><input type="hidden" id="timestamp" name="timestamp"></label>
+        <label><input type="submit" id="btnapply" value="Apply for Membership"></label>
     </form>
     <table class="comparison">
         <caption>Membership Level Feature Comparison</caption>
