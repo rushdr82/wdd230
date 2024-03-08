@@ -167,6 +167,18 @@ h3 {
     text-align: center;
 }
 
+#activity-links p {
+    display: inline;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#activity-links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+}
+
 .infocard h3 {
     color: black;
     text-align: center;

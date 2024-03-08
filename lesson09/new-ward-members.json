@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+        "familyName": "Rush",
+        "moveInDate": "2017-11-01",
+        "numberOfPeople": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Dustin Rush",
+                "gender": "Male",
+                "birthdate": "1982-02-01"
+            },
+            {
+                "name": "Laska Rush",
+                "gender": "Female",
+                "birthdate": "1983-04-01"
+            },
+            {
+                "name": "Sarah Rush",
+                "gender": "Female",
+                "birthdate": "2013-03-01"
+            },
+            {
+                "name": "Ty Rush",
+                "gender": "Male",
+                "birthdate": "2016-05-01"
+            }
+        ]
+    }
+}
