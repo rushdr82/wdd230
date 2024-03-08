@@ -4,7 +4,7 @@ let unorderedList = document.querySelector("#activity-links");
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
-    //displayLinks(data);
+    console.log(data)
+    //displayLinks(data)
 }
 getLinks();
