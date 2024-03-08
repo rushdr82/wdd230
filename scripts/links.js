@@ -8,4 +8,3 @@ async function getLinks() {
     //displayLinks(data);
 }
 getLinks();
-
