@@ -1,0 +1,144 @@
+{
+    "members": [
+        {
+            "name": "Rustic Roost Cafe",
+            "address": {
+                "street": "123 Pine Street",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-1234",
+            "website": "www.rusticroostcafe.com",
+            "image": "images/rusticrostlogo.webp",
+            "level": "Bronze",
+            "founded": "2008"
+        },
+        {
+            "name": "Sunrise Coffee House",
+            "address": {
+                "street": "123 Main Street",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-1234",
+            "website": "www.sunrisecoffee.com",
+            "image": "images/sunrisecoffeehouselogo.webp",
+            "level": "Bronze",
+            "founded": "2005"
+        },
+        {
+            "name": "Mountain View Bookstore",
+            "address": {
+                "street": "456 Elm Avenue",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-5678",
+            "website": "www.mountainviewbooks.com",
+            "image": "images/mountainviewlogo.webp",
+            "level": "Silver",
+            "founded": "1998"
+        },
+        {
+            "name": "Wildflower Boutique",
+            "address": {
+                "street": "456 Meadow Lane",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-5678",
+            "website": "www.wildflowerboutique.com",
+            "image": "images/wildflowerboutiquelogo.webp",
+            "level": "Silver",
+            "founded": "2010"
+        },
+        {
+            "name": "Mountain Paws Pet Spa",
+            "address": {
+                "street": "789 Dogwood Avenue",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-9876",
+            "website": "www.mountainpawsspa.com",
+            "image": "images/mountainpawslogo.webp",
+            "level": "Silver",
+            "founded": "2015"
+        },
+        {
+            "name": "Crafty Creations Art Studio",
+            "address": {
+                "street": "101 Artist Lane",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-2468",
+            "website": "www.craftycreationsart.com",
+            "image": "images/craftycreationslogo.webp",
+            "level": "Bronze",
+            "founded": "2003"
+        },
+        {
+            "name": "Hayden Hideaway Inn",
+            "address": {
+                "street": "101 Lakeside Drive",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-2468",
+            "website": "www.haydenhideaway.com",
+            "image": "images/haydenhideawaylogo.webp",
+            "level": "Gold",
+            "founded": "1995"
+        },
+        {
+            "name": "Artisan Pottery Studio",
+            "address": {
+                "street": "234 Clay Street",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-3456",
+            "website": "www.artisanpottery.com",
+            "image": "images/artisanpotterylogo.webp",
+            "level": "Bronze",
+            "founded": "2002"
+        },
+        {
+            "name": "Antique Treasures Emporium",
+            "address": {
+                "street": "456 Vintage Road",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-2345",
+            "website": "www.antiquetreasures.com",
+            "image": "images/antiqueemporiumlogo.webp",
+            "level": "Silver",
+            "founded": "1990"
+        },
+        {
+            "name": "Evergreen Garden Center",
+            "address": {
+                "street": "567 Spruce Avenue",
+                "city": "Hayden",
+                "state": "ID",
+                "zip": "83835"
+            },
+            "phone": "(208) 555-6789",
+            "website": "www.evergreengardens.com",
+            "image": "images/evergreengardenlogo.webp",
+            "level": "Gold",
+            "founded": "1985"
+        }
+    ]
+}
