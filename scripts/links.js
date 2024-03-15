@@ -15,7 +15,7 @@ function displayLinks(lessons) {
         listElement.appendChild(weekHeader)
         let linksList = lesson.links
         let linksListLength = lesson.links.length;
-        // console.log(linksList.length)
+        //console.log(linksList.length)
         for (i = 0; i < linksListLength; i++) {
             let link = linksList[i]
             if (i < linksListLength - 1) {
