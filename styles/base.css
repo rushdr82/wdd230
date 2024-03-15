@@ -179,7 +179,8 @@ h3 {
     font-size: small;
 }
 
-.infocard h3 {
+.infocard h3,
+.infocard h4 {
     color: black;
     text-align: center;
 }
@@ -188,12 +189,25 @@ h3 {
     text-align: center;
 }
 
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-temp {
+    padding-bottom: 10px;
+}
+
 .page-visits {
     font-weight: bold;
+    font-style: italic;
+    font-size: smaller;
 }
 
 .visits {
     font-weight: bolder;
+    font-size: smaller;
 }
 
 iframe {

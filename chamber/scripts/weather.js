@@ -90,6 +90,3 @@ async function getWeatherData() {
 
 // Call the function to get weather data
 getWeatherData();
-
-// Call the function to get weather data
-getWeatherData();

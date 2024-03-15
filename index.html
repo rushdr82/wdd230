@@ -53,8 +53,19 @@
         </section>
         <section class="infocard">
                 <h3>Information</h3>
-                <p class="Location">Hayden, Idaho, USA</p>
-                <p class="Weather">(Weather)</p>
+                <h4 class="Location">Hayden, Idaho, USA</h4>
+                <h4>Weather Conditions</h4>
+                <div class="weather">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                    </figure>
+                </div>
+                <div class="weather">
+                    <span id="current-temp"></span>
+                </div>
+                <div class="weather">
+                    <figcaption></figcaption>
+                </div>
                 <p><span class="page-visits">Number of Visits:&Tab;</span><span class="visits"></span></p>
         </section>
             <section class="map">
@@ -72,6 +83,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/pagevisits.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
