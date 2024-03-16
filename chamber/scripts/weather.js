@@ -1,92 +1,63 @@
-// Example function to fetch weather data
-async function getWeatherData() {
-    const locationUrl = 'https://api.weather.gov/points/47.757112,-116.788877';
-    try {
-        const response = await fetch(locationUrl);
-        const locationData = await response.json();
-        const forecastUrl = locationData.properties.forecast;
-        const forecastResponse = await fetch(forecastUrl);
-        const forecastData = await forecastResponse.json();
+// Weather and forecast data API script
+const apiKey = 'f69ba042398b2e408d45471b786011e5';
+const lat = '47.76';
+const lon = '-116.78';
+const part = 'current,minutely,hourly,alerts'; //excluded from API response
 
-        // Extract relevant weather information
-        const shortForecast = forecastData.properties.periods[0].shortForecast;
-        const currentTemperature = forecastData.properties.periods[0].temperature;
-        const windSpeed = forecastData.properties.periods[0].windSpeed;
-        const windDirection = forecastData.properties.periods[0].windDirection;
+// Function to get the real-time weather conditions
+function getRealTimeWeather(lat, lon, apiKey) {
+    const url2 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    fetch(url2)
+        .then(response => response.json())
+        .then(data => {
+            const temperature = data.main.temp; // Temperature
+            const feels_like = data.main.feels_like //windchill + humidity
+            const weatherDescription = data.weather[0].description; // Weather description
+            const weatherIconCodenow = data.weather[0].icon; // Weather icon code
+            const weatherIconUrlnow = `http://openweathermap.org/img/wn/${weatherIconCodenow}.png`; // Weather icon URL
 
-        // Check if the short forecast contains "Sunny"
-        if (shortForecast.includes("Sunny")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/9/92/Draw_sunny.png";
-            document.getElementById("thumbnail").alt = "Sunny";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Check if the short forecast contains "Mostly Cloudy"
-        if (shortForecast.includes("Mostly Cloudy")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/f/f6/Weather-overcast.svg";
-            document.getElementById("thumbnail").alt = "Mostly Cloudy";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Check if the short forecast contains "Partly Cloudy"
-        if (shortForecast.includes("Partly Cloudy")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Weather-more-clouds.svg";
-            document.getElementById("thumbnail").alt = "Partly Cloudy";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Check if the short forecast contains "Partly Sunny"
-        if (shortForecast.includes("Partly Sunny")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/5/52/Weather-few-clouds.svg";
-            document.getElementById("thumbnail").alt = "Partly Sunny";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Check if the short forecast contains "Clear"
-        if (shortForecast.includes("Clear")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/f/f9/Weather-clear-night.svg";
-            document.getElementById("thumbnail").alt = "Clear";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Check if the short forecast contains "Snow"
-        if (shortForecast.includes("Snow")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/8/84/Weather-snow.svg";
-            document.getElementById("thumbnail").alt = "Snow";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Check if the short forecast contains "Rain"
-        if (shortForecast.includes("Rain")) {
-            // Display a sunny thumbnail on your webpage
-            document.getElementById("thumbnail").src = "https://upload.wikimedia.org/wikipedia/commons/4/45/Weather-overcast-rare-showers.svg";
-            document.getElementById("thumbnail").alt = "Rain";
-        } else {
-            // Do nothing or display a different thumbnail
-        }
-
-        // Display the data on your webpage
-        document.getElementById('shortForecast').textContent = `${shortForecast}`;
-        document.getElementById('temperature').textContent = `${currentTemperature}°F`;
-        document.getElementById('windSpeed').textContent = `${windSpeed}`;
-        document.getElementById('windDirection').textContent = `Wind: ${windDirection}`;
-
-    } catch (error) {
-        console.error('Error fetching weather data:', error);
-    }
+            //console.log(`Temperature: ${temperature}`);
+            //console.log(`Weather Description: ${weatherDescription}`);
+            //console.log(`Weather Icon URL: ${weatherIconUrlnow}`);
+            document.getElementById('temperature').textContent = `${Math.round(temperature)}°F`;
+            document.getElementById('feels_like').textContent = `Feels like: ${Math.round(feels_like)}°F`;
+            document.getElementById('weather-icon').src = `${weatherIconUrlnow}`;
+            document.getElementById('description').textContent = weatherDescription;
+        })
+        .catch(error => console.error('Error fetching data:', error));
 }
 
-// Call the function to get weather data
-getWeatherData();
+// Call the function with your city, country code, and API key
+getRealTimeWeather(lat, lon, apiKey);
+
+// Function to get the three-day weather forecast
+function getThreeDayForecast(lat, lon, apiKey) {
+    const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=${part}&units=imperial&appid=${apiKey}`;
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const threeDayForecast = data.daily.slice(0, 3);
+            //console.log(threeDayForecast);
+            forecastContainer = document.getElementById('weather-forecast');
+            threeDayForecast.forEach(day => {
+                const date = new Date(day.dt * 1000);
+                const daysOfWeek = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+                const dayOfWeek = daysOfWeek[date.getDay()];
+                const temp = day.temp.day;
+                const description = day.weather[0].description;
+                const weatherIconCodefut = day.weather[0].icon;
+                const weatherIconUrlfut = `http://openweathermap.org/img/wn/${weatherIconCodefut}.png`;
+                forecastContainer.innerHTML += `
+                    <div class="forecast-day">
+                        <p>${dayOfWeek}</p>
+                        <img src="${weatherIconUrlfut}" alt="Weather icon">
+                        <p>${Math.round(temp)}°F</p>
+                    </div>
+                `;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}
+
+// Call the function with your coordinates and API key
+getThreeDayForecast(lat, lon, apiKey);

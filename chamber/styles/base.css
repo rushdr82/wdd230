@@ -25,6 +25,17 @@ header {
     position: relative;
 }
 
+#banner {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+}
+
 #menu {
     position: absolute;
     right: 2%;
@@ -227,7 +238,8 @@ input:checked+.slider:before {
 }
 
 .home-grid,
-.discover-grid {
+.discover-grid,
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,7 +289,6 @@ input:checked+.slider:before {
 
 .mem-app div {
     padding-top: 1rem;
-    color: darkblue;
     font-size: .9rem;
 }
 
@@ -367,6 +378,7 @@ td {
 
 tbody tr:nth-child(odd) {
     background-color: hsl(0, 0%, 93%, 1);
+    color: black;
 }
 
 .bronze {
@@ -389,12 +401,12 @@ tbody tr:nth-child(odd) {
     margin-left: 10px;
 }
 
-.caption {
-    margin: 0 auto;
-    padding-bottom: 15px;
-    font-size: smaller;
-    font-style: italic;
+figcaption {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: small;
 }
 
 #visit-message {
@@ -404,28 +416,23 @@ tbody tr:nth-child(odd) {
 
 .events-card,
 .weather-card,
-.business-card,
 .demo-card,
-.calendar-card,
-.events-card2,
 .welcome-card {
     border-style: double;
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
+    margin-top: 25px;
     text-align: center;
     background-color: gray;
-    min-width: 300px;
-    min-height: 200px;
     width: 300px;
+    height: 450px;
 }
 
 .events-card h2,
 .weather-card h2,
-.business-card h2,
 .demo-card h2,
-.calendar-card h2,
-.events-card2 h2,
+.business-card h2,
 .welcome-card h2 {
     background-color: black;
     color: whitesmoke;
@@ -434,127 +441,67 @@ tbody tr:nth-child(odd) {
 }
 
 .events-card a,
-.weather-card a,
 .business-card a,
 .demo-card a,
-.calendar-card a,
-.events-card2 a,
 .welcome-card a {
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-.events-card p,
 .weather-card p,
+.demo-card p,
 .business-card p,
-.demo-card p,
-.calendar-card p,
-.events-card2 p {
-    text-align: left;
-    padding: 2%;
-}
-
-.events-card {
-    margin-top: 25px;
-}
-
-.weather-card p,
-.demo-card p,
 .welcome-card p {
     text-align: center;
+}
+
+.events-card p,
+.demo-card p {
+    text-align: left;
+    padding: 2%;
 }
 
 .inner-div {
     margin-bottom: 15px;
 }
 
-.weatherbox {
+.weather-info {
+    display: block;
+}
+
+.weather-forecast {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    max-height: 40px;
+    align-items: center;
 }
 
-#thumbnail {
-    width: 60px;
-    height: 60px;
-    padding-right: 2%;
-}
-
-#temperature {
+.temperature {
     font-size: x-large;
+    padding-bottom: 5px;
 }
 
-.business-card img {
-    width: 20%;
+.feels_like {
+    font-size: smaller;
+    font-style: italic;
+    padding-bottom: 10px;
 }
 
-.calendar-card ul {
-    list-style-type: none;
-}
-
-/* Month header */
-.month {
-    padding: 30px 25px;
+.business-card {
+    border-style: double;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 25px;
     text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 450px;
 }
 
-/* Month list */
-.month ul {
-    margin: 0;
-    padding: 0;
-}
-
-.month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-    float: left;
+.business-logo {
     padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-    float: right;
-    padding-top: 10px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-}
-
-.weekdays li {
-    display: inline-block;
-    width: 13%;
-    color: #666;
-    text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-    padding: 10px 0;
-    background: #eee;
-    margin: 0;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 12px;
-    color: #777;
 }
 
 .directory,
@@ -638,7 +585,8 @@ tbody tr:nth-child(odd) {
 
 .dark-mode #members p,
 .dark-mode #members h2,
-.dark-mode #members a {
+.dark-mode #members a,
+.dark-mode .business-card {
     color: black;
 }
 

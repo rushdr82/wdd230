@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce website for Hayden, ID as part of a class project for WDD230">
     <meta name="author" content="Dustin Rush">
-    <meta property="og:title" content="Dustin Rush - WDD 230 - Chamber of Commerce Site Project">
+    <meta property="og:title" content="Chamber of Commerce - Discover Hayden">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rushdr82.github.io/wdd230/chamber">
     <meta property="og:image" content="https://images1.loopnet.com/i2/hkshLKEVUYDaZq4xtzjqH7YlSBUjx8l2GS1sABY1mIU/110/8110-N-Government-Way-Hayden-ID-Building-Photo-1-Large.jpg">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <title>Hayden Idaho Chamber of Commerce - Discover</title>
+    <title>Discover Hayden - Chamber of Commerce</title>
 </head>
 <body>
     <header>
@@ -30,13 +30,14 @@
     <section>
         <nav class="navigation">
             <a href="index.html" id="Home">Home</a>
-            <a href="discover.html" title="Discover Hayden" class="active">Discover Hayden</a>
+            <a href="discover.html" title="Discover" class="active">Discover</a>
             <a href="join.html" title="Join Us">Join Us</a>
             <a href="directory.html" title="Directory">Directory</a>
         </nav>
     </section>
     <main>
         <div class="discover-grid">
+        <div class="cards">
             <section class="welcome-card">
                 <h2>Welcome!</h2>
                 <p id="visit-message"></p>
@@ -51,7 +52,21 @@
                     <p>Median Income:&Tab;$31,116</p>
                 </div>
             </section>
-            <section class="events-card2">
+            <section class="weather-card">
+                <h2>Weather Information</h2>
+                <div class="weather-container">
+                    <div class="weather-info">
+                        <h3>Right Now:</h3>
+                        <img src="" alt="Weather Icon" id="weather-icon">
+                        <div class="temperature" id="temperature"></div>
+                        <div class="feels_like" id="feels_like"></div>
+                        <div class="description" id="description"></div>
+                    </div>
+                    <h3>3-Day Forecast:</h3>
+                    <div class="weather-forecast" id="weather-forecast"></div>
+                </div>
+            </section>
+            <section class="events-card">
                 <h2>Upcoming Events</h2>
                 <div class="inner-div">
                 <h3>Annual Member Meeting</h3>
@@ -60,109 +75,70 @@
                     <a href="annualmeeting.html">More Info...</a>
                 </div>
             </section>
-            <section class="calendar-card">
-                <h2>Calendar</h2>
+            <section class="business-card">
+                <h2>Business Spotlight</h2>
                 <div class="inner-div">
-                    <div class="month">
-                        <ul>
-                          <li class="prev">&#10094;</li>
-                          <li class="next">&#10095;</li>
-                          <li>February<br><span>2024</span></li>
-                        </ul>
-                      </div>
-                      <ul class="weekdays">
-                        <li>Su</li>
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                      </ul>
-                      <ul class="days">
-                        <li>28</li>
-                        <li>29</li>
-                        <li>30</li>
-                        <li>31</li>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        <li>10</li>
-                        <li>11</li>
-                        <li>12</li>
-                        <li>13</li>
-                        <li>14</li>
-                        <li>15</li>
-                        <li>16</li>
-                        <li>17</li>
-                        <li>18</li>
-                        <li>19</li>
-                        <li>20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
-                        <li>25</li>
-                        <li>26</li>
-                        <li>27</li>
-                        <li>28</li>
-                        <li>29</li>
-                      </ul>  
+                    <div class="business-container">
+                        <img class="business-logo" src="images/evergreengardenlogo.webp" alt="Company logo of Evergreen Garden Center" loading="lazy" width="200" height="200">
+                        <div class="business-info">
+                            <h3>Evergreen Garden Center</h3>
+                            <p>567 Spruce Avenue, Hayden, ID 83835</p>
+                            <p>(208) 555-6789</p>
+                            <a href="www.evergreengardens.com">www.evergreengardens.com</a>
+                        </div>
+                    </div>
                 </div>
             </section>
+        </div>
             <div class="dis-pic">
-            <picture >
-                <source srcset="images/atlas-sm.webp" media="(max-width: 500px)">
-                <source srcset="images/atlas-med.webp" media="(max-width: 750px)">
-                <img src="images/atlas-lrg.webp" alt="Atlas Elementary School" loading="lazy">
-            </picture>
-            <p class="caption">Atlas Elementary School</p>
-            </div>
-            <div class="dis-pic">
-            <picture >
-                <source srcset="images/broadmoore-sm.webp" media="(max-width: 500px)">
-                <source srcset="images/broadmoore-med.webp" media="(max-width: 750px)">
-                <img src="images/broadmoore-lrg.webp" alt="Broadmoore Park" loading="lazy">
-            </picture>
-            <p class="caption">Broadmoore Park</p>
-            </div>
-            <div class="dis-pic">
-            <picture >
-                <source srcset="images/shopping-sm.webp" media="(max-width: 500px)">
-                <source srcset="images/shopping-med.webp" media="(max-width: 750px)">
-                <img src="images/shopping-lrg.webp" alt="Hayden Shopping Center" loading="lazy">
-            </picture>
-            <p class="caption">Hayden Shopping Center</p>
-            </div>
-            <div class="dis-pic">
-            <picture >
-                <source srcset="images/stoddard-sm.webp" media="(max-width: 500px)">
-                <source srcset="images/stoddard-med.webp" media="(max-width: 750px)">
-                <img src="images/stoddard-lrg.webp" alt="Stoddard Park" loading="lazy">
-            </picture>
-            <p class="caption">Stoddard Park</p>
-            </div>
-            <div class="dis-pic">
-            <picture >
-                <source srcset="images/meadows-sm.webp" media="(max-width: 500px)">
-                <source srcset="images/meadows-med.webp" media="(max-width: 750px)">
-                <img src="images/meadows-lrg.webp" alt="Meadows Elementary School" loading="lazy">
-            </picture>
-            <p class="caption">Meadows Elementary School</p>
-            </div>
-            <div class="dis-pic">
-            <picture >
-                <source srcset="images/honeysuckle-sm.webp" media="(max-width: 500px)">
-                <source srcset="images/honeysuckle-med.webp" media="(max-width: 750px)">
-                <img src="images/honeysuckle-lrg.webp" alt="Honeysuckle Beach Park" loading="lazy">
-            </picture>
-            <p class="caption">Honeysuckle Beach Park</p>
+                <div>
+                    <figure>
+                    <source srcset="images/atlas-sm.webp" media="(max-width: 500px)">
+                    <source srcset="images/atlas-med.webp" media="(max-width: 750px)">
+                    <img src="images/atlas-lrg.webp" alt="Atlas Elementary School" loading="lazy">
+                    <figcaption>Atlas Elementary School</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <source srcset="images/broadmoore-sm.webp" media="(max-width: 500px)">
+                    <source srcset="images/broadmoore-med.webp" media="(max-width: 750px)">
+                    <img src="images/broadmoore-lrg.webp" alt="Broadmoore Park" loading="lazy">
+                    <figcaption>Broadmoore Park</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <source srcset="images/shopping-sm.webp" media="(max-width: 500px)">
+                    <source srcset="images/shopping-med.webp" media="(max-width: 750px)">
+                    <img src="images/shopping-lrg.webp" alt="Hayden Shopping Center" loading="lazy">
+                    <figcaption>Hayden Shopping Center</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <source srcset="images/stoddard-sm.webp" media="(max-width: 500px)">
+                    <source srcset="images/stoddard-med.webp" media="(max-width: 750px)">
+                    <img src="images/stoddard-lrg.webp" alt="Stoddard Park" loading="lazy">
+                    <figcaption>Stoddard Park</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <source srcset="images/meadows-sm.webp" media="(max-width: 500px)">
+                    <source srcset="images/meadows-med.webp" media="(max-width: 750px)">
+                    <img src="images/meadows-lrg.webp" alt="Meadows Elementary School" loading="lazy">
+                    <figcaption>Meadows Elementary School</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <source srcset="images/honeysuckle-sm.webp" media="(max-width: 500px)">
+                    <source srcset="images/honeysuckle-med.webp" media="(max-width: 750px)">
+                    <img src="images/honeysuckle-lrg.webp" alt="Honeysuckle Beach Park" loading="lazy">
+                    <figcaption>Honeysuckle Beach Park</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </main>
@@ -184,5 +160,6 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/visit-message.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
