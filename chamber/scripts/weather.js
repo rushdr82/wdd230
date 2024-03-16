@@ -14,14 +14,14 @@ function getRealTimeWeather(lat, lon, apiKey) {
             const feels_like = data.main.feels_like //windchill + humidity
             const weatherDescription = data.weather[0].description; // Weather description
             const weatherIconCodenow = data.weather[0].icon; // Weather icon code
-            const weatherIconUrlnow = `http://openweathermap.org/img/wn/${weatherIconCodenow}.png`; // Weather icon URL
+            const weatherIconUrlnow = `https://openweathermap.org/img/wn/${weatherIconCodenow}.png`; // Weather icon URL
 
             //console.log(`Temperature: ${temperature}`);
             //console.log(`Weather Description: ${weatherDescription}`);
             //console.log(`Weather Icon URL: ${weatherIconUrlnow}`);
             document.getElementById('temperature').textContent = `${Math.round(temperature)}°F`;
             document.getElementById('feels_like').textContent = `Feels like: ${Math.round(feels_like)}°F`;
-            document.getElementById('weather-icon').src = `${weatherIconUrlnow}`;
+            document.getElementById('weather-icon').innerHTML = `<img src="${weatherIconUrlnow}" alt="Weather icon">`;
             document.getElementById('description').textContent = weatherDescription;
         })
         .catch(error => console.error('Error fetching data:', error));
@@ -46,7 +46,7 @@ function getThreeDayForecast(lat, lon, apiKey) {
                 const temp = day.temp.day;
                 const description = day.weather[0].description;
                 const weatherIconCodefut = day.weather[0].icon;
-                const weatherIconUrlfut = `http://openweathermap.org/img/wn/${weatherIconCodefut}.png`;
+                const weatherIconUrlfut = `https://openweathermap.org/img/wn/${weatherIconCodefut}.png`;
                 forecastContainer.innerHTML += `
                     <div class="forecast-day">
                         <p>${dayOfWeek}</p>
