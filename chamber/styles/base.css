@@ -75,6 +75,10 @@ nav {
     margin: 0 auto;
 }
 
+.active {
+    background-color: #87d68d;
+}
+
 .hero {
     position: relative;
     justify-content: center;
