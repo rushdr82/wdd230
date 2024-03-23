@@ -23,4 +23,43 @@
         width: 95%;
     }
 
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .cards {
+        grid-column: 1/2;
+        justify-content: start;
+        align-self: self-start;
+        margin-top: unset;
+    }
+
+    .dis-pic {
+        grid-column: 2/3;
+        width: 90%;
+        height: 90%;
+        align-items: start;
+        margin: 0 auto;
+    }
+
+    .events-card,
+    .weather-card,
+    .demo-card,
+    .welcome-card {
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .business-card {
+        grid-column: 3/4;
+    }
+
+    .dis-pic img {
+        max-width: 500px;
+    }
+
 }
