@@ -1,9 +1,5 @@
 @media screen and (min-width:1000px) {
 
-    body {
-        max-width: 1500px;
-    }
-
     #hero-large {
         display: block;
     }
@@ -35,15 +31,13 @@
         left: 50%;
     }
 
-    .events-card {
-        margin-top: 25px;
-    }
-
-    .weather-card {
-        margin-top: 25px;
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .business-card {
-        margin-top: 25px;
+        grid-column: 3/4;
+        width: 95%;
     }
+
 }

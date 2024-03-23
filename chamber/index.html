@@ -18,7 +18,8 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="header-section-main">
+            <img class="chamber-logo" src="images/logo-hayden-chamber-200.png" alt="Main Logo for Hayden Chamber of Commerce">
             <h1 class="home-title">Hayden Idaho<br>Chamber of Commerce</h1>
         </section>
         <label class="switch">
@@ -42,10 +43,9 @@
     <section>
         <div class="hero">
                 <picture class="hero-img">
-                    <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/wdd230-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/wdd230-large.webp" alt="Week06 Hero Image">
-                      <!--<img id="hero-img" src="images/lakeside-ariel-mobile.jpg" alt="Hayden Area Ariel Photo">-->
+                    <source srcset="images/cda-hayden-idaho-ariel-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/cda-hayden-idaho-ariel-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/cda-hayden-idaho-ariel-large.webp" alt="Hero CDA Ariel Photo">
                 </picture>
                 <div class="herolabel">
                     <p id="hero-small">Small</p>
@@ -92,15 +92,7 @@
             <section class="business-card">
                 <h2>Business Spotlight</h2>
                 <div class="inner-div">
-                    <div class="business-container">
-                        <img class="business-logo" src="images/evergreengardenlogo.webp" alt="Company logo of Evergreen Garden Center" loading="lazy" width="200" height="200">
-                        <div class="business-info">
-                            <h3>Evergreen Garden Center</h3>
-                            <p>567 Spruce Avenue, Hayden, ID 83835</p>
-                            <p>(208) 555-6789</p>
-                            <a href="www.evergreengardens.com">www.evergreengardens.com</a>
-                        </div>
-                    </div>
+                    <span id="spotlight"></span>
                 </div>
             </section>
         </div>
@@ -124,5 +116,6 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
